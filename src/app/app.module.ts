@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -11,8 +12,10 @@ import { Error404Component } from './pages/error404/error404.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 import { OurTeamComponent } from './pages/our-team/our-team.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { PlaneaTuViajeComponent } from './components/home/planea-tu-viaje/planea-tu-viaje.component';
 
-import { RouterModule, Routes } from '@angular/router';
+import { NgIconsModule } from '@ng-icons/core';
+import { matCheckCircle, matCarRental, matArrowForwardIos } from '@ng-icons/material-icons/baseline'
 
 const routes: Routes = [
   {
@@ -57,10 +60,12 @@ const routes: Routes = [
     TestimonialsComponent,
     OurTeamComponent,
     ContactComponent,
+    PlaneaTuViajeComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matArrowForwardIos })
   ],
   providers: [],
   bootstrap: [AppComponent]
