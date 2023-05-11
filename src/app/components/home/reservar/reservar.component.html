@@ -1,0 +1,119 @@
+<div class="bg-neutral-100 rounded-lg shadow-xl mx-2 md:mx-8 my-4">
+  <h2 class="text-xl font-bold p-8">Reservar un coche</h2>
+  <form class="px-8 pb-8 grid gap-4 grid-cols-1 md:grid-cols-3">
+    <div>
+      <label for="modelos" class="block mb-2 text-lg font-medium"
+        ><p>
+          <ng-icon
+            name="matDirectionsCar"
+            class="text-emerald-900 text-lg align-[-2px]"
+          ></ng-icon>
+          Seleccioná el modelo
+          <span class="text-emerald-900">*</span>
+        </p></label
+      >
+      <select
+        id="modelos"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
+      >
+        <option selected>Seleccioná el modelo</option>
+        <option>Audi A1 S-Line</option>
+        <option>VW Golf 6</option>
+        <option>Toyota Camry</option>
+        <option>BMW 320 ModernLine</option>
+        <option>Mercedes-Benz GLK</option>
+        <option>VW Passat CC</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="recogida-locacion" class="block mb-2 text-lg font-medium"
+        ><p>
+          <ng-icon
+            name="matLocationOn"
+            class="text-emerald-900 text-lg align-[-2px]"
+          ></ng-icon>
+          Recogida
+          <span class="text-emerald-900">*</span>
+        </p></label
+      >
+      <select
+        id="recogida-locacion"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
+      >
+        <option selected>Seleccioná una localización</option>
+        <option>Belgrano</option>
+        <option>Palermo</option>
+        <option>Colegiales</option>
+        <option>Recoleta</option>
+        <option>Constitución</option>
+        <option>La Boca</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="entrega-locacion" class="block mb-2 text-lg font-medium"
+        ><p>
+          <ng-icon
+            name="matLocationOn"
+            class="text-emerald-900 text-lg align-[-2px]"
+          ></ng-icon>
+          Entrega
+          <span class="text-emerald-900">*</span>
+        </p></label
+      >
+      <select
+        id="entrega-locacion"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
+      >
+        <option selected>Seleccioná una localización</option>
+        <option>Belgrano</option>
+        <option>Palermo</option>
+        <option>Colegiales</option>
+        <option>Recoleta</option>
+        <option>Constitución</option>
+        <option>La Boca</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="recogida-fecha" class="block mb-2 text-lg font-medium"
+        ><p>
+          <ng-icon
+            name="matCalendarMonth"
+            class="text-emerald-900 text-lg align-[-2px]"
+          ></ng-icon>
+          Recogida
+          <span class="text-emerald-900">*</span>
+        </p></label
+      >
+      <input
+        id="recogida-fecha"
+        type="date"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
+      />
+    </div>
+
+    <div>
+      <label for="entrega-fecha" class="block mb-2 text-lg font-medium"
+        ><p>
+          <ng-icon
+            name="matCalendarMonth"
+            class="text-emerald-900 text-lg align-[-2px]"
+          ></ng-icon>
+          Entrega
+          <span class="text-emerald-900">*</span>
+        </p></label
+      >
+      <input
+        id="entrega-fecha"
+        type="date"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
+      />
+    </div>
+
+    <div class="flex items-end">
+      <button type="button" class="w-full bg-emerald-900 text-white text-lg py-1.5 rounded shadow-lg shadow-emerald-900/50">Buscar</button>
+    </div>
+  </form>
+</div>

@@ -13,9 +13,10 @@ import { TestimonialsComponent } from './pages/testimonials/testimonials.compone
 import { OurTeamComponent } from './pages/our-team/our-team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PlaneaTuViajeComponent } from './components/home/planea-tu-viaje/planea-tu-viaje.component';
+import { ReservarComponent } from './components/home/reservar/reservar.component'
 
 import { NgIconsModule } from '@ng-icons/core';
-import { matCheckCircle, matCarRental, matArrowForwardIos } from '@ng-icons/material-icons/baseline'
+import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth } from '@ng-icons/material-icons/baseline';
 
 const routes: Routes = [
   {
@@ -61,11 +62,12 @@ const routes: Routes = [
     OurTeamComponent,
     ContactComponent,
     PlaneaTuViajeComponent,
+    ReservarComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matArrowForwardIos })
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth })
   ],
   providers: [],
   bootstrap: [AppComponent]
