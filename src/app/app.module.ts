@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -67,7 +68,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth })
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth }),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

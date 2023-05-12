@@ -1,6 +1,38 @@
 <div class="bg-neutral-100 rounded-lg shadow-xl mx-2 md:mx-8 my-4">
   <h2 class="text-xl font-bold p-8">Reservar un coche</h2>
-  <form class="px-8 pb-8 grid gap-4 grid-cols-1 md:grid-cols-3">
+  <div
+    *ngIf="
+      (forms.get('modelo')?.invalid ||
+        forms.get('recogidaLocacion')?.invalid ||
+        forms.get('entregaLocacion')?.invalid ||
+        forms.get('recogidaFecha')?.invalid ||
+        forms.get('entregaFecha')?.invalid) &&
+      isSubmitted
+    "
+    class="flex p-4 mb-4 mx-8 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50"
+    role="alert"
+  >
+    <svg
+      aria-hidden="true"
+      class="flex-shrink-0 inline w-5 h-5 mr-3"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+    <span class="sr-only">Info</span>
+    <div>Todos los campos son requeridos.</div>
+  </div>
+  <form
+    [formGroup]="forms"
+    (ngSubmit)="sacarReserva()"
+    class="px-8 pb-8 grid gap-4 grid-cols-1 md:grid-cols-3"
+  >
     <div>
       <label for="modelos" class="block mb-2 text-lg font-medium"
         ><p>
@@ -13,10 +45,11 @@
         </p></label
       >
       <select
+        formControlName="modelo"
         id="modelos"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
       >
-        <option selected>Seleccioná el modelo</option>
+        <option value="" disabled selected>Seleccioná el modelo</option>
         <option>Audi A1 S-Line</option>
         <option>VW Golf 6</option>
         <option>Toyota Camry</option>
@@ -38,10 +71,11 @@
         </p></label
       >
       <select
+        formControlName="recogidaLocacion"
         id="recogida-locacion"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
       >
-        <option selected>Seleccioná una localización</option>
+        <option value="" disabled selected>Seleccioná una localización</option>
         <option>Belgrano</option>
         <option>Palermo</option>
         <option>Colegiales</option>
@@ -63,10 +97,11 @@
         </p></label
       >
       <select
+        formControlName="entregaLocacion"
         id="entrega-locacion"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
       >
-        <option selected>Seleccioná una localización</option>
+        <option value="" disabled selected>Seleccioná una localización</option>
         <option>Belgrano</option>
         <option>Palermo</option>
         <option>Colegiales</option>
@@ -88,6 +123,7 @@
         </p></label
       >
       <input
+        formControlName="recogidaFecha"
         id="recogida-fecha"
         type="date"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
@@ -106,6 +142,7 @@
         </p></label
       >
       <input
+        formControlName="entregaFecha"
         id="entrega-fecha"
         type="date"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-emerald-900 focus:border-emerald-900 block w-full p-2.5"
@@ -113,7 +150,12 @@
     </div>
 
     <div class="flex items-end">
-      <button type="button" class="w-full bg-emerald-900 text-white text-lg py-1.5 rounded shadow-lg shadow-emerald-900/50">Buscar</button>
+      <button
+        type="submit"
+        class="w-full bg-emerald-900 text-white text-lg py-1.5 rounded shadow-lg shadow-emerald-900/50"
+      >
+        Buscar
+      </button>
     </div>
   </form>
 </div>
