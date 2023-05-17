@@ -16,10 +16,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PlaneaTuViajeComponent } from './components/home/planea-tu-viaje/planea-tu-viaje.component';
 import { ReservarComponent } from './components/home/reservar/reservar.component'
 import { RapidoYFacilComponent } from './components/home/rapido-y-facil/rapido-y-facil.component';
+import { VehiculosComponent } from './components/home/vehiculos/vehiculos.component';
+import { GrisComponent } from './components/home/gris/gris.component';
 
 import { NgIconsModule } from '@ng-icons/core';
 import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic } from '@ng-icons/material-icons/baseline';
-import { VehiculosComponent } from './components/home/vehiculos/vehiculos.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,7 @@ const routes: Routes = [
     ReservarComponent,
     RapidoYFacilComponent,
     VehiculosComponent,
+    GrisComponent,
   ],
   imports: [
     BrowserModule,
