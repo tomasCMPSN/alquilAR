@@ -1,0 +1,205 @@
+<div class="my-20 mx-4 md:mx-8 text-center">
+  <h3 class="font-semibold text-2xl">Modelos de Vehículos</h3>
+  <h4 class="font-bold text-4xl py-4">Nuestra flota de alquiler</h4>
+  <p>
+    Elija entre una gran variedad de nuestros increíbles vehículos de alquiler
+    para su próxima aventura o viaje de negocios.
+  </p>
+</div>
+<div class="block lg:flex flex-nowrap my-14 mx-4 md:mx-8 gap-8">
+  <div class="w-full lg:w-3/12">
+    <ul>
+      <li>
+        <button
+          (click)="tab0()"
+          [className]="
+            tab == 0
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          Audi A1 S-Line
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="tab1()"
+          [className]="
+            tab == 1
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          VW Golf 6
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="tab2()"
+          [className]="
+            tab == 2
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          Toyota Camry
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="tab3()"
+          [className]="
+            tab == 3
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          BMW 320 ModernLine
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="tab4()"
+          [className]="
+            tab == 4
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          Mercedes-Benz GLK
+        </button>
+      </li>
+      <li>
+        <button
+          (click)="tab5()"
+          [className]="
+            tab == 5
+              ? 'bg-emerald-900 text-white w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+              : 'bg-neutral-100 w-full font-semibold text-xl text-left p-4 mb-2 hover:text-white hover:bg-emerald-900'
+          "
+          type="button"
+        >
+          VW Passat CC
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="w-full lg:w-9/12">
+    <img
+      *ngIf="tab == 0"
+      class="w-full"
+      src="../../../../assets/img/ac8eab323b70310480c08142d5fe1be7.png"
+      alt="Audi A1 S-Line"
+    />
+    <img
+      *ngIf="tab == 1"
+      class="w-full"
+      src="../../../../assets/img/035c6d9e39fe11852356f5d9d39bb015.png"
+      alt="VW Golf 6"
+    />
+    <img
+      *ngIf="tab == 2"
+      class="w-full"
+      src="../../../../assets/img/2017Auto___Toyota_Silver_car_Toyota_Camry_2017_on_a_white_background_111698_.jpg"
+      alt="Toyota Camry"
+    />
+    <img
+      *ngIf="tab == 3"
+      class="w-full"
+      src="../../../../../assets/img/1071960.jpg"
+      alt="BMW 320 ModernLine"
+    />
+    <img
+      *ngIf="tab == 4"
+      class="w-full"
+      src="../../../../../assets/img/vZUnt66wzDa08sTnmGWI071zichv5X.png"
+      alt="Mercedes-Benz GLK"
+    />
+    <img
+      *ngIf="tab == 5"
+      class="w-full"
+      src="../../../../../assets/img/2015-volkswagen-passat-se-sedan-angular-front.webp"
+      alt="VW Passat CC"
+    />
+  </div>
+  <div class="w-full lg:w-3/12">
+    <h2 class="bg-emerald-900 text-white text-center text-lg py-3">
+      <strong>$45</strong> / dolares por día
+    </h2>
+    <table class="w-full text-center">
+      <tbody>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Modelo
+          </th>
+          <td class="px-6 py-4">A1</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Marca
+          </th>
+          <td class="px-6 py-4">Audi</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Año
+          </th>
+          <td class="px-6 py-4">2012</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Puertas
+          </th>
+          <td class="px-6 py-4">4/5</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            ABS
+          </th>
+          <td class="px-6 py-4">Si</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Cambio
+          </th>
+          <td class="px-6 py-4">Manual</td>
+        </tr>
+        <tr class="border-b">
+          <th
+            scope="row"
+            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+          >
+            Combustible
+          </th>
+          <td class="px-6 py-4">Nafta</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="bg-emerald-900 text-white text-center w-full py-3 font-bold">
+      RESERVAR AHORA
+    </button>
+  </div>
+</div>

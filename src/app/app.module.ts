@@ -19,6 +19,7 @@ import { RapidoYFacilComponent } from './components/home/rapido-y-facil/rapido-y
 
 import { NgIconsModule } from '@ng-icons/core';
 import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic } from '@ng-icons/material-icons/baseline';
+import { VehiculosComponent } from './components/home/vehiculos/vehiculos.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,7 @@ const routes: Routes = [
     PlaneaTuViajeComponent,
     ReservarComponent,
     RapidoYFacilComponent,
+    VehiculosComponent,
   ],
   imports: [
     BrowserModule,

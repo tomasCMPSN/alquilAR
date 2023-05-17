@@ -27,7 +27,6 @@ export class ReservarComponent implements OnInit {
   }
 
   sacarReserva(){
-    console.log(this.forms);
     this.isSubmitted = true
   }
 }
