@@ -18,9 +18,10 @@ import { ReservarComponent } from './components/home/reservar/reservar.component
 import { RapidoYFacilComponent } from './components/home/rapido-y-facil/rapido-y-facil.component';
 import { VehiculosComponent } from './components/home/vehiculos/vehiculos.component';
 import { GrisComponent } from './components/home/gris/gris.component';
+import { PorQueElegirnosComponent } from './components/home/por-que-elegirnos/por-que-elegirnos.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic } from '@ng-icons/material-icons/baseline';
+import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff } from '@ng-icons/material-icons/baseline';
 
 const routes: Routes = [
   {
@@ -70,11 +71,12 @@ const routes: Routes = [
     RapidoYFacilComponent,
     VehiculosComponent,
     GrisComponent,
+    PorQueElegirnosComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic }),
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff }),
     ReactiveFormsModule
   ],
   providers: [],
