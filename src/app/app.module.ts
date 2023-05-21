@@ -21,6 +21,7 @@ import { GrisComponent } from './components/home/gris/gris.component';
 import { PorQueElegirnosComponent } from './components/home/por-que-elegirnos/por-que-elegirnos.component';
 import { TestimoniosComponent } from './components/home/testimonios/testimonios.component';
 import { FaqComponent } from './components/home/faq/faq.component';
+import { DownloadComponent } from './components/home/download/download.component';
 
 import { NgIconsModule } from '@ng-icons/core';
 import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff } from '@ng-icons/material-icons/baseline';
@@ -76,6 +77,7 @@ const routes: Routes = [
     PorQueElegirnosComponent,
     TestimoniosComponent,
     FaqComponent,
+    DownloadComponent,
   ],
   imports: [
     BrowserModule,
