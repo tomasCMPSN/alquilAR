@@ -24,7 +24,7 @@ import { FaqComponent } from './components/home/faq/faq.component';
 import { DownloadComponent } from './components/home/download/download.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff } from '@ng-icons/material-icons/baseline';
+import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail } from '@ng-icons/material-icons/baseline';
 
 const routes: Routes = [
   {
@@ -82,7 +82,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff }),
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail }),
     ReactiveFormsModule
   ],
   providers: [],
