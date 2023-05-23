@@ -22,6 +22,7 @@ import { PorQueElegirnosComponent } from './components/home/por-que-elegirnos/po
 import { TestimoniosComponent } from './components/home/testimonios/testimonios.component';
 import { FaqComponent } from './components/home/faq/faq.component';
 import { DownloadComponent } from './components/home/download/download.component';
+import { CompaniaComponent } from './components/about/compania/compania.component';
 
 import { NgIconsModule } from '@ng-icons/core';
 import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail } from '@ng-icons/material-icons/baseline';
@@ -78,6 +79,7 @@ const routes: Routes = [
     TestimoniosComponent,
     FaqComponent,
     DownloadComponent,
+    CompaniaComponent,
   ],
   imports: [
     BrowserModule,
