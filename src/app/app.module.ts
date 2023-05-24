@@ -23,9 +23,10 @@ import { TestimoniosComponent } from './components/home/testimonios/testimonios.
 import { FaqComponent } from './components/home/faq/faq.component';
 import { DownloadComponent } from './components/home/download/download.component';
 import { CompaniaComponent } from './components/about/compania/compania.component';
+import { ModelsGridComponent } from './components/models/models-grid/models-grid.component';
 
 import { NgIconsModule } from '@ng-icons/core';
-import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail } from '@ng-icons/material-icons/baseline';
+import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail, matStar } from '@ng-icons/material-icons/baseline';
 
 const routes: Routes = [
   {
@@ -80,11 +81,12 @@ const routes: Routes = [
     FaqComponent,
     DownloadComponent,
     CompaniaComponent,
+    ModelsGridComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail }),
+    NgIconsModule.withIcons({ matCheckCircle, matCarRental, matCarRepair, matArrowForwardIos, matDirectionsCar, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail, matStar }),
     ReactiveFormsModule
   ],
   providers: [],

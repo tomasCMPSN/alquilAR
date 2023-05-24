@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "A1",
+    "brand": "Audi",
+    "price": 45,
+    "img": "https://www.lavoz.com.ar/resizer/UtBxr7RYCsExJzfDTfygc1Ytjh4=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/Y5HXTEKADRCAPDFAKR2QRKFJNQ.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Golf 6",
+    "brand": "VW",
+    "price": 37,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a2/VW_Golf_1.6_TDI_Style_%28VI%29_%E2%80%93_Frontansicht%2C_25._Februar_2012%2C_Ratingen.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camry",
+    "brand": "Toyota",
+    "price": 30,
+    "img": "https://automotiva.com.ar/wp-content/uploads/2022/08/Toyota_Camry-2.jpg"
+  },
+  {
+    "id": 4,
+    "name": "320i",
+    "brand": "BMW",
+    "price": 35,
+    "img": "https://cdn.motor1.com/images/mgl/PEj9W/s3/lanzamiento-bmw-320i-sportline.jpg"
+  },
+  {
+    "id": 5,
+    "name": "GLK",
+    "brand": "Mercedes-Benz",
+    "price": 50,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mercedes-Benz_GLK_220_CDI_4MATIC_Sport-Paket_AMG_%28X_204%2C_Facelift%29_%E2%80%93_Frontansicht%2C_24._August_2014%2C_D%C3%BCsseldorf.jpg/1200px-Mercedes-Benz_GLK_220_CDI_4MATIC_Sport-Paket_AMG_%28X_204%2C_Facelift%29_%E2%80%93_Frontansicht%2C_24._August_2014%2C_D%C3%BCsseldorf.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Passat",
+    "brand": "VW",
+    "price": 25,
+    "img": "https://cloudfront-us-east-1.images.arcpublishing.com/artear/EYZ3HP4RHAC4P2S2XFXFGVFZ3E.jpg"
+  }
+]
