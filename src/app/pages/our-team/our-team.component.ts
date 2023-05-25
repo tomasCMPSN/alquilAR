@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
+import teamData from './team.json'
+
+interface Person {
+  id: Number,
+  name: String,
+  work: String,
+  img: String
+}
 
 @Component({
   selector: 'app-our-team',
@@ -7,4 +15,5 @@ import { Component } from '@angular/core';
 })
 export class OurTeamComponent {
 
+  persons: Person[] = teamData
 }

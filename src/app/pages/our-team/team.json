@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Lucas Mellera",
+        "work": "Vendedor",
+        "img": "../../../assets/img/Lucas.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ana Scallo",
+        "work": "Fotografa",
+        "img": "../../../assets/img/Ana.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Laura Rivers",
+        "work": "Detallista",
+        "img": "../../../assets/img/Laura.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ayelen Casas",
+        "work": "Manager",
+        "img": "../../../assets/img/Ayelen.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Miguel Cáceres",
+        "work": "Dueño",
+        "img": "../../../assets/img/Miguel.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Martín Rios",
+        "work": "Mecánico",
+        "img": "../../../assets/img/Martin.jpg"
+    }
+]
