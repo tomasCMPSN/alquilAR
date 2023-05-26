@@ -24,6 +24,7 @@ import { FaqComponent } from './components/home/faq/faq.component';
 import { DownloadComponent } from './components/home/download/download.component';
 import { CompaniaComponent } from './components/about/compania/compania.component';
 import { ModelsGridComponent } from './components/models/models-grid/models-grid.component';
+import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
 
 import { NgIconsModule } from '@ng-icons/core';
 import { matCheckCircle, matCarRental, matArrowForwardIos, matDirectionsCar, matCarRepair, matLocationOn, matCalendarMonth, matHeadsetMic, matLocalCarWash, matAttachMoney, matMoneyOff, matLocalPhone, matEmail, matStar } from '@ng-icons/material-icons/baseline';
@@ -82,6 +83,7 @@ const routes: Routes = [
     DownloadComponent,
     CompaniaComponent,
     ModelsGridComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
